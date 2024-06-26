@@ -1,0 +1,308 @@
+:root{
+	--background-clr: #f2ebd5;
+	--background-sec-clr: #f2f1ed;
+	--caffe-brown: #361602;
+	--caffe-hazel: #3d3830;
+	--white: #fff;
+	--margin-norm-v: 180px;
+	--margin-norm-h: 150px;
+	--padding-norm-v: 30px;
+	--padding-norm-h: 60px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+p, a{
+	font-size: 14px;
+}
+
+body{
+	background-color: var(--background-clr);
+	font-family: 'Poppins';
+}
+
+::-webkit-scrollbar{
+	width: .7rem;
+}
+
+::-webkit-scrollbar-track{
+	background-color: var(--background-sec-clr);
+	border-radius: 100px;
+	margin-block: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: var(--caffe-brown);
+	border-radius: 100vw;
+}
+
+header{
+	background: url('img/header-img.jpg') no-repeat center;
+	background-size: cover;
+	max-width: 100%;
+	min-height: 700px;
+	color: var(--white);
+}
+
+.top-menu{
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--padding-norm-v) var(--padding-norm-h);
+}
+
+nav{
+	display: flex;
+	gap: 96px;
+}
+
+nav a{
+	color: var(--white);
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+header .cta-ctn{
+	margin: var(--margin-norm-v) var(--margin-norm-h);
+	
+}
+
+header .cta-ctn h4{
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+header .cta-ctn h2{
+	font-size: 3rem;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cta-ctn .cta{
+	padding: 12px 24px;
+	border-radius: 50px;
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.cta-ctn .cta.light{
+	background-color: var(--white);
+	color: var(--caffe-brown);
+	transition: background-color 2s;
+}
+
+.cta.light:hover{
+	background-color: var(--caffe-hazel);
+}
+
+.cta.dark{
+	background-color: var(--caffe-brown);
+	color: var(--white);
+}
+
+.item-btn{
+	padding: 5px;
+	border-radius: 15px;
+}
+
+main{
+	background-color: var(--white);
+}
+
+
+main .special{
+	margin: 0 var(--margin-norm-h);
+}
+
+main .special h2{
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--caffe-brown);
+	font-weight: 500;
+	margin-top: 20px;
+}
+
+main .carousel-ctn{
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+	margin: 40px auto;
+	max-width: 1100px;
+}
+
+main .carousel-ctn .items{
+	padding: 10px;
+	background-color: var(--background-sec-clr);
+	border-radius: 10px;
+	position: relative;
+	line-height-step: 10px;
+}
+
+main .carousel-ctn .items img{
+	max-width: 230px;
+	min-height: 340px;
+	border-radius: 5px;
+}
+
+main .carousel-ctn .items .item-name{
+	font-weight: 700;
+	color: var(--caffe-brown);
+	font-size: initial;
+	margin-top: 10px;
+}
+
+main .carousel-ctn .items .item-desc{
+	font-size: 12px;
+	color: var(--caffe-hazel);
+	line-height-step: initial;
+}
+
+main .carousel-ctn .items .item-price{
+	font-weight: 700;
+	color: var(--caffe-brown);
+	font-size: 18px;
+	display: inline-block;
+}
+
+main .carousel-ctn .items .item-btn{
+	position: absolute;
+	right: 5px;
+}
+
+#home-explore{
+	background: url('img/beans-landscape.png') no-repeat center;
+	background-size: cover;
+	max-width: 100%;
+	min-height: 300px;
+	background-color: var(--background-clr);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#home-explore .cta-ctn{
+	max-width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #f2f1edee;
+	border-radius: 5px;
+	padding: 30px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#home-testimonials{
+	padding: 60px 0;
+}
+
+
+.testimonial-header{
+	text-align: center;
+	margin: 0 0 40px;
+}
+
+.testimonial-header h4{
+	font-family: "Great Vibes", cursive;
+	font-size: 1.8rem;
+}
+
+.testimonial-header h2{
+	font-size: 2rem;
+}
+
+.testimonials-ctn{
+	display: grid;
+	grid-template-columns: 4fr 5fr 4fr;
+	margin: 0 var(--margin-norm-h);
+	gap: 15px;
+
+}
+
+.testimonials-ctn .testimonials-items{
+	background-color: var(--background-sec-clr);
+	padding: 20px 15px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-ctn .testimonials-items .header{
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.testimonials-ctn .testimonials-items .customer-name{
+	font-size: 16px;
+}
+
+.testimonials-ctn .testimonials-items .rating{
+	color: #ffb300;
+	font-size: 16px;
+}
+
+#home-discount{
+	background: url('img/beans2-landscape.png') no-repeat center;
+	background-size: cover;
+	max-width: 100%;
+	min-height: 300px;
+	background-color: var(--background-clr);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#home-discount .cta-ctn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#home-discount form{
+	text-align: center;
+}
+
+#home-discount form h2{
+	text-align: center;
+}
+
+#home-discount form p{
+	font-size: 12px;
+}
+
+
+#home-discount form input[type="email"]{
+	border-radius: 20px;
+	padding: 10px 15px;
+	width: 300px;
+	font-size: 16px;
+}
+
+footer{
+	display: flex;
+	color: var(--white);
+	background-color: var(--caffe-hazel);
+	justify-content: space-around;
+	font-weight: 300;
+	padding: 30px 0;
+}
+
+footer .footer-ctns h4, h5{
+	text-transform: uppercase;
+}
+
+footer .footer-ctns p{
+	font-size: 12px;
+	margin-top: 5px;
+}
